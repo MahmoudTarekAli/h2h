@@ -1,0 +1,44 @@
+<nz-layout>
+  <nz-sider nzCollapsible [nzCollapsed]="true" [nzTrigger]="null" nzTheme="light">
+    <div class="logo">
+      <img class="logo-img" src="assets/logo.jpg" alt="logo">
+    </div>
+    <ul nz-menu nzMode="inline">
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+      </li>
+    </ul>
+    <div class="fixed-actions">
+      <ul nz-menu nzMode="inline">
+        <li nz-menu-item>
+          <span nz-icon nzType="file"></span>
+        </li>
+        <li nz-menu-item>
+          <span nz-icon nzType="file"></span>
+        </li>
+        <li nz-menu-item>
+          <span nz-icon nzType="file"></span>
+        </li>
+      </ul>
+    </div>
+
+
+  </nz-sider>
+  <nz-layout>
+    <nz-content>
+      <router-outlet></router-outlet>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

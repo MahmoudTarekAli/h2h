@@ -8,13 +8,13 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
-          "standalone": true
+          "standalone": false
         },
         "@schematics/angular:directive": {
-          "standalone": true
+          "standalone": false
         },
         "@schematics/angular:pipe": {
-          "standalone": true
+          "standalone": false
         }
       },
       "root": "",
@@ -33,13 +33,12 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+
             ],
             "scripts": []
           },

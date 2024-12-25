@@ -1,0 +1,60 @@
+nz-layout {
+  height: 100%;
+}
+
+
+nz-sider {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  border-right: 1px solid #f0f0f0;
+
+}
+
+.ant-menu-vertical {
+  border-right: 0;
+}
+
+.logo {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 15px;
+  .logo-img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+  }
+}
+
+.header-menu {
+  line-height: 64px;
+}
+
+.sider-menu {
+  height: 100%;
+  border-right: 0;
+}
+
+.inner-layout {
+  padding: 0
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+nz-content {
+  background: #fff;
+  min-height: 280px;
+}
+
+.fixed-actions{
+  ul{
+    border-right: 0;
+
+  }
+  border-top: 1px solid #f0f0f0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
