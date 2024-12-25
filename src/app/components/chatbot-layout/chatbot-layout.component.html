@@ -1,4 +1,6 @@
-<nz-layout>
+<nz-layout style="display: flex; height: 100vh;">
+  <!-- Sidebar Section -->
+
   <nz-sider nzCollapsible [nzCollapsed]="true" [nzTrigger]="null" nzTheme="light">
     <div class="logo">
       <img class="logo-img" src="assets/logo.jpg" alt="logo">
@@ -33,12 +35,39 @@
         </li>
       </ul>
     </div>
+  </nz-sider>
 
+  <!-- History Section -->
+  <nz-sider class="history relative" [nzCollapsed]="false" [nzTrigger]="null" nzTheme="light" nzWidth="250px">
+
+    <div class="hth">
+      <div class="logo">
+        <img class="logo-img" src="assets/h2h.png" alt="logo">
+      </div>
+    </div>
+
+    <div class="flex flex-col p-6 gap-y-5">
+      <div class="text-xs text-gray-400 text">Today</div>
+      <div class="flex flex-row items-center justify-between">
+        <div class="flex flex-row items-center gap-1">
+          <span nz-icon nzType="file"></span>
+          <div class="title">test</div>
+        </div>
+        <div class="action">test</div>
+      </div>
+
+    </div>
+
+    <div class="absolute w-full bottom-0 p-5">
+      <button class="w-full" nz-button  nzSize="large" nzShape="round" style="background: #602650; color: white">
+        New Bot
+      </button>
+    </div>
 
   </nz-sider>
-  <nz-layout>
-    <nz-content>
-      <router-outlet></router-outlet>
-    </nz-content>
-  </nz-layout>
+
+  <!-- Main Content Section -->
+  <nz-content style="flex: 1; padding: 16px; height: 100%;">
+    <router-outlet></router-outlet>
+  </nz-content>
 </nz-layout>

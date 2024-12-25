@@ -1,0 +1,20 @@
+<div class="flex justify-center items-center h-full flex-col w-full">
+  <div class="w-2/4 text-center flex flex-col gap-11">
+    <span class="text-4xl">Good Morning Mahmoud !</span>
+    <div class="flex flex-col gap-4 text-center">
+      <span class="text-sm">How Can I help You</span>
+
+      <div class="w-full bg-white pr-4 pl-4 pt-14 pb-4" style="border-radius: 10px;">
+        <nz-input-group  [nzAddOnAfter]="suffixIconSearch"
+                        [nzAddOnBefore]="suffixIconSearch">
+          <input nz-input placeholder="Basic usage"  />
+        </nz-input-group>
+        <ng-template #suffixIconSearch>
+          <span nz-icon nzType="search"></span>
+        </ng-template>
+      </div>
+
+    </div>
+  </div>
+
+</div>

@@ -6,6 +6,8 @@ import { ChatbotComponent } from './chatbot.component';
 import {NzContentComponent, NzHeaderComponent, NzLayoutComponent, NzSiderComponent} from 'ng-zorro-antd/layout';
 import {NzMenuDirective, NzMenuItemComponent, NzSubMenuComponent} from 'ng-zorro-antd/menu';
 import {NzBreadCrumbComponent, NzBreadCrumbItemComponent} from 'ng-zorro-antd/breadcrumb';
+import {NzInputDirective, NzInputGroupComponent} from "ng-zorro-antd/input";
+import {NzIconDirective} from 'ng-zorro-antd/icon';
 
 
 @NgModule({
@@ -23,7 +25,10 @@ import {NzBreadCrumbComponent, NzBreadCrumbItemComponent} from 'ng-zorro-antd/br
     NzMenuItemComponent,
     NzBreadCrumbComponent,
     NzContentComponent,
-    NzBreadCrumbItemComponent
+    NzBreadCrumbItemComponent,
+    NzInputGroupComponent,
+    NzIconDirective,
+    NzInputDirective
   ]
 })
 export class ChatbotModule { }

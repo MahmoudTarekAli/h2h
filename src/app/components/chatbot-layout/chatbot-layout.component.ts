@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {NzContentComponent, NzHeaderComponent, NzLayoutComponent, NzSiderComponent} from 'ng-zorro-antd/layout';
 import {NzMenuDirective, NzMenuItemComponent, NzSubMenuComponent} from 'ng-zorro-antd/menu';
-import {HeaderComponent} from '../header/header.component';
+import {NzButtonComponent} from 'ng-zorro-antd/button';
 import {NzIconDirective} from 'ng-zorro-antd/icon';
-import {NzTooltipDirective} from 'ng-zorro-antd/tooltip';
 
 @Component({
   selector: 'app-chatbot-layout',
@@ -16,6 +15,7 @@ import {NzTooltipDirective} from 'ng-zorro-antd/tooltip';
     NzMenuDirective,
     NzMenuItemComponent,
     NzSiderComponent,
+    NzButtonComponent,
     NzIconDirective,
   ],
   templateUrl: './chatbot-layout.component.html',

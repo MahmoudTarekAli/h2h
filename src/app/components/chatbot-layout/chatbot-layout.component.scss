@@ -10,19 +10,39 @@ nz-sider {
   left: 0;
   border-right: 1px solid #f0f0f0;
 
+  &.history {
+    margin-left: 80px;
+  }
 }
 
 .ant-menu-vertical {
   border-right: 0;
 }
 
+.hth {
+  .logo {
+    border-bottom: 1px solid #f0f0f0;
+    height: 60px;
+
+    .logo-img {
+      width: 100px;
+      margin: auto;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+}
+
 .logo {
   border-bottom: 1px solid #f0f0f0;
-  padding: 15px;
+  height: 60px;
+
   .logo-img {
     width: 30px;
-    height: 30px;
     margin: auto;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -46,15 +66,21 @@ nz-breadcrumb {
 nz-content {
   background: #fff;
   min-height: 280px;
+  margin-left: 330px;
 }
 
-.fixed-actions{
-  ul{
+.fixed-actions {
+  ul {
     border-right: 0;
-
   }
+
   border-top: 1px solid #f0f0f0;
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+
+nz-content {
+  background: #f9f8f8;
 }
